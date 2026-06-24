@@ -1,4 +1,5 @@
 import express from "express"
+import student from "./express.js"
 const app = express();
 
 // Routes
@@ -42,6 +43,18 @@ app.get("/array",cb);
 app.get("/crazy",[cb1,cb2],(req,res)=>{
     res.send("Crazzy hai ya tho")
 });
+
+
+// Express route
+app.route("/express").get((req,res)=>{console.log("get")}).post((req,res)=>console.log("post")) // and go on for all 
+
+
+// froom other page
+
+app.use("/student",student);
+
+
+
 app.listen(8000,()=>{
     console.log("kya haal hai bhai");
 });

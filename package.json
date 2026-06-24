@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "index.js",
-    "dev" : "nodemon index.js" 
+    "dev" : "nodemon router_params.js" 
   },
   "keywords": [],
   "author": "",
